@@ -1,7 +1,5 @@
 <h1>Todos</h1>
 
-<ul>
-  <li *ngFor="let t of todos" class="todo">{{ t.title }}</li>
-</ul>
+<myorg-todos [todos]="todos"></myorg-todos>
 
-<button id="add-todo" (click)="addTodo()">Add Todo</button>
+<button (click)="addTodo()">Add Todo</button>
